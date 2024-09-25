@@ -1,0 +1,9 @@
+{
+  "singleQuote": true,
+  "semi": true,
+  "bracketSpacing": true,
+  "useTabs": true,
+  "printWidth": 120
+  "tabWight": 2
+  "editor.formatOnSave": true
+}

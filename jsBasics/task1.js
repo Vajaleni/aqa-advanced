@@ -1,11 +1,11 @@
-let myString = 'I learn English';
+let myString = "I learn English";
 const myNumber = 35;
 const myBoolean = true;
 let myNull = null;
-let myUnderfined
+let myUnderfined;
 
-console.log (myString);
-console.log (myNumber);
-console.log (myBoolean);
-console.log (myNull);
-console.log (myUnderfined);
+console.log(myString);
+console.log(myNumber);
+console.log(myBoolean);
+console.log(myNull);
+console.log(myUnderfined);

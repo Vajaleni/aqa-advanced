@@ -1,34 +1,31 @@
-let grade=67
-let averageGrade
+let grade = 67;
+let averageGrade;
 
-switch(true) {
-    case grade < 60:
-    averageGrade = 'Незадовільно';
+switch (true) {
+  case grade < 60:
+    averageGrade = "Незадовільно";
     console.log(averageGrade);
     break;
 
-    case grade <= 70:
-    averageGrade = 'Задовільно';
+  case grade <= 70:
+    averageGrade = "Задовільно";
     console.log(averageGrade);
     break;
 
-    case grade <= 80 :
-    averageGrade = 'Добре';
+  case grade <= 80:
+    averageGrade = "Добре";
     console.log(averageGrade);
     break;
 
-    case grade <= 90:
-    averageGrade = 'Дуже добре';
+  case grade <= 90:
+    averageGrade = "Дуже добре";
     console.log(averageGrade);
     break;
 
-    case grade <= 100:
-    averageGrade = 'Відмінно';
+  case grade <= 100:
+    averageGrade = "Відмінно";
     console.log(averageGrade);
     break;
-    default:
-       console.log('Оценіть будь ласка від 0 до 100');
-        
-    }
-    
-
+  default:
+    console.log("Оценіть будь ласка від 0 до 100");
+}
