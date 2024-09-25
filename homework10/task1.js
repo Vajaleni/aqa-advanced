@@ -35,9 +35,6 @@ class Book {
       return current.year < oldest.year ? current : oldest;
     });
 
-    return books.reduce((oldest, current) =>
-      current.year < oldest.year ? current : oldest,
-    );
   }
 }
 
