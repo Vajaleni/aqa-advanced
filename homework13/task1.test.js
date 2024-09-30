@@ -9,19 +9,19 @@ const axiosInstanse = axios.create({
 
 
 test('GET /posts return status code is 200, posts are arrays', async () => {
-    const response = await axios.get(`${baseURL}/posts`);
+    const response = await axiosInstanse.get(`/posts`);
     expect(response.status).toBe(200);
     expect(Array.isArray(response.data)).toBe(true)
 });
 
 test('GET/post/1 return id 1 and status code is 200', async ()  => {
-    const response = await axios.get(`${baseURL}/posts/1`);
+    const response = await axiosInstanse.get(`/posts/1`);
     expect(response.status).toBe(200);  
     expect(response.data.id).toBe(1)
 });
 
 test('GET/users/1 return users data and status code is 200', async ()  => {
-    const response = await axios.get(`${baseURL}/posts/1`); 
+    const response = await axiosInstanse.get(`/posts/1`); 
     expect(response.status).toBe(200);  
     expect(typeof response.data).toBe('object')
 });
@@ -33,13 +33,13 @@ test('POST/create a new post and return status code 201', async ()  => {
   body: 'bar',
   userId: 1
     }
-    const response = await axios.post(`${baseURL}/posts`, newPost);
+    const response = await axiosInstanse.post(`/posts`, newPost);
     expect(response.status).toBe(201); 
     expect(response.data).toMatchObject(newPost)
     expect(response.data).toHaveProperty('id');
 });
 
-test('POST/not create a new user and return 404'), async() =>{
+test('POST/not create a new user and return 404', async() =>{
 const newUser = {
     id: 1000,
     title: 'foo786ggh',
@@ -47,9 +47,9 @@ const newUser = {
     userId: 1
 };
 try {
-    await axios.post(`${baseURL}/posts`, newUser);
+    await axiosInstanse.post(`/posts`, newUser);
 } catch (error) {
     expect(error.responce.status).toBe(404);
 }
-}
+});
 
