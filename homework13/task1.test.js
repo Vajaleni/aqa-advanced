@@ -49,7 +49,7 @@ const newUser = {
 try {
     await axiosInstanse.post(`/posts`, newUser);
 } catch (error) {
-    expect(error.responce.status).toBe(404);
+    expect(error.response.status).toBe(404);
 }
 });
 
