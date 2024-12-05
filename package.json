@@ -1,0 +1,26 @@
+{
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": " eslint  . --fix",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "Olena",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chalk": "^5.3.0",
+    "jest": "^29.7.0",
+    "jest-html-reporters": "^3.1.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6"
+  }
+}
